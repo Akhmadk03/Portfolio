@@ -43,8 +43,8 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
-    position: absolute;
+    background: #0066ff;
+   position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
@@ -103,7 +103,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background-color: #ff004f;
+    background-color: #0066ff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -117,7 +117,7 @@ nav ul li a:hover::after{
     margin: 2px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #0066ff;
     font-size: 14px;
 }
 .tab-contents{
@@ -164,7 +164,7 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
-*/
+
 /*-----------------Portfolio-----------------*/
 #portfolio{
     padding: 50px 0;
@@ -189,7 +189,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #0066ff);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -210,7 +210,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #0066ff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -230,15 +230,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #0066ff;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #ababab;
+    color: #fff;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #0066ff;
 }
 /*-----------------Contact-----------------*/
 .contact-left{
@@ -251,7 +251,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #0066ff;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -267,12 +267,13 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #0066ff;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #0066ff;
+    color: #fff;
 }
 .contact-right form{
     width: 100%;
@@ -284,7 +285,7 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #ababab;
+    color: #fff;
     font-size: 18px;
     border-radius: 6px;
 }
