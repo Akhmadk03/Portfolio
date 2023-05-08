@@ -337,8 +337,8 @@ nav .fa-solid{
         background: #0066ff;
         position: fixed;
         top: 0;
-        right: -300px;
-        width: 300px;
+        right: -200;
+        width: 200;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -373,8 +373,8 @@ nav .fa-solid{
     font-size: 14px;
    }
    .tab-links{
-    font-size: 16px;
-    margin-right: 10px;
+    font-size: 15px;
+    margin-right: 8px;
    }
    .contact-left, .contact-right{
     flex-basis: 100%;
