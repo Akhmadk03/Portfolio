@@ -382,6 +382,12 @@ nav .fa-solid{
    .copyright{
     font-size: 14px;
    }
+   .logo{
+    position: relative;
+    right: 30px;
+    top: 0px;
+
+   }
 }
 #msg{
     color: #61b752;
