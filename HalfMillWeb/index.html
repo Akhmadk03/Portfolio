@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half a Million Dollar Homepage</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(1000, 1fr);
+            grid-template-rows: repeat(500, 1fr);
+            border: 2px solid black;
+        }
+        .pixel {
+            width: 1px;
+            height: 1px;
+            border: 0.1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container" id="grid"></div>
+    </div>
+    
+    <script>
+        const gridContainer = document.getElementById('grid');
+        let purchasedPixels = {};
+        
+        for(let i = 0; i < 500000; i++) {
+            let pixel = document.createElement('div');
+            pixel.classList.add('pixel');
+            pixel.dataset.id = i;
+            
+            pixel.addEventListener('click', () => {
+                if (purchasedPixels[i]) {
+                    alert('This pixel has already been purchased.');
+                    return;
+                }
+                let confirmPurchase = confirm('Purchase this pixel for $1?');
+                if (confirmPurchase) {
+                    window.location.href = `checkout.html?pixel=${i}`;
+                }
+            });
+            
+            gridContainer.appendChild(pixel);
+        }
+    </script>
+</body>
+</html>
