@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="Ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akhmad's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b32789ca07.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+           <div class="container">
+                <nav>
+                    <img src="Images/ak-low-resolution-logo-white-on-transparent-background.png" class="logo">
+                    <ul id="sidemenu"> 
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                      <!---  <li><a href="#services">Services</a></li> -->
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1><span>Akhmad Kakhramonov</span></h1>
+                    <pi>Software Engineer</pi>
+                </div>
+           </div> 
+        </div>
+       <!-- -----------------about----------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/ProfilePic.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p style="text-indent:30px;">
+                            My name is Akhmad Kakhramonov, and I am fluent in both English and Turkish. After immigrating to the United States at a young age, I have embraced every opportunity to grow both academically and personally. Throughout my college journey, I’ve committed myself to achieving academic excellence while actively participating in extracurricular activities, believing that hard work and consistent effort are key to success.
+                        </p>
+                        <p style="text-indent:30px;">   
+                            I have developed technical expertise in Java, C++, HTML/CSS, and JavaScript, and gained significant hands-on experience through a software engineering internship. This practical exposure has not only strengthened my passion for software development but also provided me with the skills necessary to thrive in fast-paced, real-world environments. My internship experience confirmed my enthusiasm for solving complex problems and creating innovative solutions through technology.
+                        </p>
+                        <p style="text-indent:30px;">
+                            While my primary focus is software engineering, I am equally eager to explore other areas within the engineering field. I am drawn to roles that allow for creativity and problem-solving, and I am excited about the potential to make a tangible impact through engineering in various sectors. My strong work ethic, combined with a hands-on approach and adaptability, drives me to take on new challenges and continuously improve my skills in all areas of engineering.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Java, C++, Javascript, Typescript</li>
+                                <li><span>Web Development</span><br>HTML, CSS, Angular, Node.js</li>
+                                <li><span>Cloud and DevOps</span><br>Mongodb, DigitalOcean, Linux, GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>May 2024 - August 2024</span><br>Sil4 Systems</li>
+                                <li>Software Engineering Intern</li>
+                                <li>• Updated and maintained websites by integrating new features and optimizing content for improved performance and user experience.</li>
+                                <li>• Worked on various projects using C/C++, contributing to software development and</li>                                     
+                                <li>• Designed and implemented innovative solutions to enhance the functionality of web-based systems.</li>
+                                
+                                <li><span>May 2024 - Present</span><br>Wabtec Corporation</li>
+                                <li>(Sil4 Systems)</li>
+                                <li>• Constructed automated bench test (AB Bench) systems to ensure precise and reliable performance through meticulous hands-on assembly.</li>
+                                <li>• Assembled pneumatic systems, including tubing and tank setups, applying practical engineering skills for accurate and efficient installations.</li>                                     
+                            
+                                <li><span>June 2023 - October 2024</span><br>Reber Masonary and Restoration</li>
+                                <li>Bricklayer Laborer</li>
+                                <li>• Prepare mortar to ensure it's in a ready-to-use state.</li>
+                                <li>• Execute tasks involving wall grinding and demolition, addressing any necessary work.</li>                                     
+                                <li>• Handle item pickup and delivery duties.</li>
+                                <li>• Be prepared to tackle a wide range of tasks as needed.</li>
+                               
+                                <li><span>Aug 2020 - Present</span><br>Z&D Logistics LLC</li>
+                                <li>Trucking Company Associate</li>
+                                    <li>• Effectively managed the overall operations of the company to ensure smooth and efficient functioning.</li>
+                                    <li>• Established successful negotiations with brokers.</li>                                     
+                                    <li>• Ensure the invoices get done and all payments go through.</li>
+                                    <li>• Regularly maintained and updated business documents to ensure compliance and accuracy.</li>
+                                   
+                                    <li><span>Jun 2019 - Aug 2020</span><br>Chipotle</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>August 2017 - June 2021</span><br>Chartiers Valley High School<br>High School Diploma</li>
+                                <li><span>August 2021 - Present</span><br>Robert Morris University<br>BS ~> Software Engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- -----------------Portfolio----------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/ToDoList-Img.PNG">
+                <div class="layer">
+                    <h3>To Do List</h3>
+                    <p>To Do List made with HTML/CSS and JavaScript</p>
+                    <a href="https://to-do-list-nine-plum.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/github pic.jpg">
+                <div class="layer">
+                    <h3>YesClue</h3>
+                    <p>YesClue is a platform where users can upload their projects, share their work, and receive valuable feedback.</p>
+                    <a href="https://github.com/Akhmadk03/YesClue" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/github pic.jpg">
+                <div class="layer">
+                    <h3>Financial Management System</h3>
+                    <p>Developed a comprehensive application designed to simulate banking operations and manage personal expenses.</p>
+                    <a href="https://github.com/Akhmadk03/Financial-Management-System" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -----------------Contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>k.akhmad03@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 412-708-3025</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/k.akhmad03/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/akhmad-kakhramonov-7957a221b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Akhmadk03" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/Resume - Software Engineer.pdf" target="_blank" class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Akhmad</p>
+    </div>
+</div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for (tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyMVOZN13SXv7DuYYcGs_c7Am2YjHco252znMKZ0vcTKjQ-cejLNjF4H5pjeI2gGYk/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    </body>
+</html>
